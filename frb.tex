@@ -1,14 +1,8 @@
 \documentclass[lang=cn,12pt]{frbpaper}
 
-
-
-\title{BUAA 冯如杯 \hologo{LaTeX} 模板（非官方）}
-\subtitle{为专注写作而努力}
-\author{\Large Pannenets.F \\  \Large{BUAA, SME}}
-\date{\today}
-
-\headofpaper{北京航空航天大学第三十届“冯如杯”学生学术科技作品竞赛参赛作品}
-
+\title{第三十X届“冯如杯”竞赛创意赛道论文\\ \quad \\ \quad \\这是你的论文题目}
+\date{二〇二二年四月}
+\headofpaper{北京航空航天大学第三十X届“冯如杯”竞赛创意赛道参赛作品}
 
 \begin{document}
 
@@ -30,21 +24,26 @@ With China aviation pioneer Mr Fung Joe guey named Beijing university of aeronau
 
 \clearpage
 
-
-\tableofcontents
-\clearpage
-\listoffigures
-\clearpage
-\listoftables
-\clearpage
+% 图、表目录，若使用请取消注释
+% \tableofcontents
+% \clearpage
+% \listoffigures
+% \clearpage
+% \listoftables
+% \clearpage
 
 
 
 \makemain
 
+\section*{当你不想给章节标号时可以在前面加一个星号}
+\addcontentsline{toc}{section}{但是你又想在目录里看到这章，那么就加上这行}
+
+这是这段的内容。
+
 \section{简介}
 
-本模板完全依照基于第二十九届第三十届“冯如杯”学生学术科技作品竞赛论文撰写格式规范编写，两届规范并无不同，因此预计本模板可以用于之后的创意类、科技类、自然科学类的冯如杯论文写作。本项目的类文件编写很大程度上参考了 \href{https://github.com/ElegantLaTeX/ElegantPaper}{Elegant Paper} 项目的编写。本项目采用  BSD 3-Clause License .
+本模板完全依照基于第三十二届“冯如杯”竞赛创意赛道论文撰写格式规范编写。本项目修改自\href{https://github.com/PannenetsF/FRB-Template-New}{PannenetsF的FRB-Template-New}，本项目的类文件编写很大程度上参考了 \href{https://github.com/ElegantLaTeX/ElegantPaper}{Elegant Paper} 项目的编写。本项目采用  BSD 3-Clause License .
 
 \section{模块介绍}
 
@@ -56,7 +55,7 @@ With China aviation pioneer Mr Fung Joe guey named Beijing university of aeronau
 
 \subsection{封面}
 
-提供了 \lstinline{title} ，\lstinline{subtitle} ，\lstinline{author} \lstinline{date} 几个环境，均可以省略不填，以满足各种灵活的需求。其中作者项请通过 \lstinline{\Large} 等命令自行控制大小。如果需要使得时间精确到月，请使用 \lstinline{\frbtoday} 代替 \lstinline{\today}。
+请直接修改封面对应字段。
 
 \subsection{摘要}
 
@@ -173,7 +172,9 @@ With China aviation pioneer Mr Fung Joe guey named Beijing university of aeronau
 
 \section{使用方式}
 
-本项目在 Manjaro Linux 以及 WSL-ArchLinux 平台的 TeXLive 2020 的测试，通过通过 \hologo{XeLaTeX} + \hologo{BibTeX} * 2 + \hologo{XeLaTeX}，生成完整的参考文献论文。
+建议使用Overleaf进行在线编辑。
+
+原文：本项目在 Manjaro Linux 以及 WSL-ArchLinux 平台的 TeXLive 2020 的测试，通过通过 \hologo{XeLaTeX} + \hologo{BibTeX} * 2 + \hologo{XeLaTeX}，生成完整的参考文献论文。
 或者 在命令行键入 \lstinline{latexmk -xelatex frb.tex}
 
 
