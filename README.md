@@ -2,10 +2,6 @@
 
 本项目由 [Pannenets.F](https://github.com/PannenetsF) 创建，目前由[zyy](https://github.com/ZouYuyang)维护，适用于32届冯如杯创意赛道，经过修改后应也适用于之后届次比赛。
 
-注：提供的示例frb.pdf不含参考文献部分，请自行编译或参考frb(original).pdf
-
-**2023.1.19注：已知在overleaf上使用TeX Live 2022出现字体不识别的问题，请选择2021及之前的版本**
-
 - [冯如杯创意赛道 $\\LaTeX$ 模板 （非官方）](#冯如杯创意赛道-latex-模板-非官方)
   - [项目起源](#项目起源)
   - [项目 Flag（原文）](#项目-flag原文)
@@ -35,23 +31,19 @@
 
 测试平台为 Manjaro 网络安装 TeX Live 2020 ，基于 `xelatex` 与 `bibtex`。
 
-**2023.1.19注：已知在overleaf上使用TeX Live 2022出现字体不识别的问题，请选择2021及之前的版本**
-
 ## 编译方式（原文）
 
 请注意本步骤需要您先将相关字体复制到 `fonts` 文件夹内，请参考下一小节。
 
-zyy注：建议使用Overleaf进行在线编辑。
-
-**2023.1.19注：已知在overleaf上使用TeX Live 2022出现字体不识别的问题，请选择2021及之前的版本**
+zyy注：建议使用Overleaf进行在线编辑。TeX Live版本2019-2021测试均无较大问题。
 
 原文：
 
 - 通过 `xelatex -> bibtex -> xelatex * 2`
 - 直接 `latexmk -xelatex frb.tex` （简单，推荐）
 - 直接使用脚本/批处理文件
-  - Windows：双击 `frb.bat`
-  - Linux/Mac: `chmod +x frb.sh && ./frb.sh` 
+  - Windows：双击 `compile.bat`
+  - Linux/Mac: `chmod +x compile.sh && ./compile.sh` 
 
 ## 文件组织（原文）
 

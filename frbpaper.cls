@@ -184,6 +184,7 @@
 
 % 数学字体
 \RequirePackage{newtxtext}
+\defaultfontfeatures{} %  --> nextxtext is incompatible with fontspec in texlive 2022
 \RequirePackage{esint}
 
 % 页码设置 - 字体
